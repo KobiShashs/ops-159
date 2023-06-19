@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: david
+    url: jdbc:mysql://www.mycompany.com/6767/kobify?serverTimezone=UTC&createDatabaseIfNotExist=true
+    password: '90210'
+  jpa:
+    generate-ddl: 'true'
+    properties:
+      hibernate:
+        enable_lazy_load_no_trans: 'true'
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
